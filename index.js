@@ -19,7 +19,7 @@ addBookForm.addEventListener('submit', (e) => {
   const title = document.querySelector('.titleField');
   const author = document.querySelector('.authorField');
 
-  if (title.value === '' && author.value === '') { return alert('All fields are required'); }
+  if (title.value === '' && author.value === '') return null;
 
   const newBook = {
     title: title.value,

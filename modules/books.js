@@ -33,11 +33,7 @@ export default class Books {
     bookInfo.appendChild(removeBtn);
     bookList.prepend(bookInfo);
 
-    removeBtn.onclick = () => {
-      const conf = window.confirm('Are you sure you want to remove this book?');
-      if (conf) return this.removeBook(bookObject, index);
-      return null;
-    };
+    removeBtn.onclick = () => this.removeBook(bookObject, index);
   };
 
   addBook = (bookObject) => {
